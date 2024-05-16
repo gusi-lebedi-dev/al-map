@@ -1,6 +1,13 @@
 .map-title {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
 }
+
 
 .map-title span {
     background: linear-gradient(90deg, #009946 0%, #6CA7DE 100%);
@@ -8,4 +15,28 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+path[data-country] {
+    fill: #6AAAE4;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+path[data-country].map-hover {
+    fill: #009945;
+}
+path[data-country].active{
+    fill: #009945;
+}
+.info-country {
+    display: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #303C48;
+}
+.open-info-country {
+    display: flex;
+justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
