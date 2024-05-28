@@ -38,12 +38,12 @@
 }
 
 path[data-country] {
-    fill:rgba(0, 153, 70, 0.3) ;
+    fill:rgba(0, 153, 70, 0.3);
+    opacity: 100%;
 }
 
 path {
-    fill: rgba(227, 230, 235,.85);
-    opacity: 100%;
+    fill: rgba(227, 230, 235, 1);
     stroke: black;
     stroke-width: 1px;
     stroke-opacity: 1;
