@@ -16,6 +16,7 @@
 .info-country-block svg {
     width: 100%;
     margin-bottom: 80px;
+    height: 100%;
 }
 
 .map-title {
@@ -84,4 +85,38 @@ path[data-country].active {
 
 .text-green {
     color: #009946;
+}
+
+@media screen and (max-width: 1076px) {
+    .map-title {
+        font-size: 36px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .info-country-block {
+        padding: 35px;
+    }
+    .map-title {
+        font-size: 30px;
+    }
+    .country {
+        font-size: 22px;
+    }
+    .total, .number {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .map-title {
+        font-size: 24px;
+    }
+    .country {
+        font-size: 18px;
+    }
+    .total, .number {
+        font-size: 14px;
+    }
 }
