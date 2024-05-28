@@ -37,25 +37,24 @@
     text-fill-color: transparent;
 }
 
-path {
-    fill: rgb(227, 230, 235);
-    opacity: 100%;
+path[data-country] {
+    fill:rgba(0, 153, 70, 0.3) ;
 }
 
-path[data-country] {
-    fill: #009946;
-    opacity: 30%;
+path {
+    fill: rgba(227, 230, 235,.85);
+    opacity: 100%;
     stroke: black;
-    stroke-width: 0.5px;
+    stroke-width: 1px;
+    stroke-opacity: 1;
 }
 
 path[data-country].map-hover {
-    fill: #009946;
+    fill: rgba(0, 153, 70, 1);
 }
 
 path[data-country].active {
-    fill: #009946;
-    opacity: 100%;
+    fill: rgba(0, 153, 70, 1);
 }
 
 .info-country {
@@ -63,13 +62,13 @@ path[data-country].active {
     font-size: 24px;
     font-weight: 700;
     color: #303C48;
-
 }
 
 .country {
     font-size: 32px;
     font-weight: 800;
 }
+
 .open-info-country {
     display: flex;
     flex-wrap: wrap;
@@ -78,9 +77,11 @@ path[data-country].active {
 .open-info-country span {
     flex-basis: 100%;
 }
+
 .open-info-country span:first-child {
     margin-bottom: 10px;
 }
+
 .text-green {
     color: #009946;
 }

@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     result = (number / 1e6).toFixed(1);
                 }
 
+                if (result.indexOf('.') > -1) {
+                    result = result.replace(/\.0$/, '');
+                }
+
                 return number < 0 ? `-${result}` : result;
             }
             let textMil = '';
@@ -64,6 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     result = (number / 1e3).toFixed(0);
                     textMil = ' тыс. человек'
                 }
+
+                if (result.indexOf('.') > -1) {
+                    result = result.replace(/\.0$/, '');
+                }
+
                 return number < 0 ? `-${result}` : result;
             }
 
