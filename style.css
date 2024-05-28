@@ -98,6 +98,11 @@ path[data-country].active {
     .info-country-block {
         padding: 35px;
     }
+
+    .info-country-block svg {
+        margin-bottom: 30px;
+    }
+
     .map-title {
         font-size: 30px;
     }
