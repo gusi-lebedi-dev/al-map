@@ -10,7 +10,6 @@
 
 .info-country-block {
     max-width: 1920px;
-    padding: 60px;
 }
 
 .info-country-block svg {
@@ -95,10 +94,6 @@ path[data-country].active {
 }
 
 @media screen and (max-width: 767px){
-    .info-country-block {
-        padding: 35px;
-    }
-
     .info-country-block svg {
         margin-bottom: 30px;
     }
