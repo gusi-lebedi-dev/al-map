@@ -10,6 +10,7 @@
 
 .info-country-block {
     max-width: 1920px;
+    font-family: 'Mont',sans-serif;
 }
 
 .info-country-block svg {
@@ -19,7 +20,6 @@
 }
 
 .map-title {
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
