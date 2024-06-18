@@ -66,9 +66,13 @@ path[data-country].active {
 
 .country {
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
 }
-
+.total,
+.number {
+    font-weight: 600;
+    font-size: 24px;
+}
 .open-info-country {
     display: flex;
     flex-wrap: wrap;
