@@ -10,7 +10,7 @@
 
 .info-country-block {
     max-width: 1920px;
-    font-family: 'Mont',sans-serif;
+    font-family: 'Mont', sans-serif;
 }
 
 .info-country-block svg {
@@ -38,7 +38,7 @@
 }
 
 path[data-country] {
-    fill:rgba(0, 153, 70, 0.3);
+    fill: rgba(0, 153, 70, 0.3);
     opacity: 100%;
 }
 
@@ -68,11 +68,13 @@ path[data-country].active {
     font-size: 32px;
     font-weight: 700;
 }
+
 .total,
 .number {
     font-weight: 600;
     font-size: 24px;
 }
+
 .open-info-country {
     display: flex;
     flex-wrap: wrap;
@@ -90,14 +92,18 @@ path[data-country].active {
     color: #009946;
 }
 
+.total .text-green,
+.number .text-green {
+    display: inline;
+}
+
 @media screen and (max-width: 1076px) {
     .map-title {
         font-size: 36px;
     }
-
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .info-country-block svg {
         margin-bottom: 30px;
     }
@@ -105,22 +111,31 @@ path[data-country].active {
     .map-title {
         font-size: 30px;
     }
+
     .country {
         font-size: 22px;
     }
+
     .total, .number {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .map-title {
         font-size: 24px;
     }
+
     .country {
         font-size: 18px;
     }
+
     .total, .number {
         font-size: 14px;
+    }
+
+    .total .text-green,
+    .number .text-green {
+        display: block !important;
     }
 }
