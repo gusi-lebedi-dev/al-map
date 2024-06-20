@@ -36,26 +36,29 @@
     background-clip: text;
     text-fill-color: transparent;
 }
-
+rect[data-country]{
+    fill: rgba(0, 153, 70, 0.3);
+}
 path[data-country] {
     fill: rgba(0, 153, 70, 0.3);
     opacity: 100%;
 }
-
+rect,
 path {
     fill: rgba(227, 230, 235, 1);
     stroke: black;
     stroke-width: 0;
     stroke-opacity: 1;
 }
-
+rect[data-country].map-hover,
 path[data-country].map-hover {
     fill: rgba(0, 153, 70, 1);
 }
-
+rect[data-country].active,
 path[data-country].active {
     fill: rgba(0, 153, 70, 1);
 }
+
 
 .info-country {
     display: none;
@@ -101,6 +104,10 @@ path[data-country].active {
     .map-title {
         font-size: 36px;
     }
+    .total .text-green,
+    .number .text-green {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -134,8 +141,5 @@ path[data-country].active {
         font-size: 14px;
     }
 
-    .total .text-green,
-    .number .text-green {
-        display: block !important;
-    }
+
 }

@@ -79,7 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
             infoCountry.classList.add('open-info-country')
             countryBlock.innerHTML = "Страна: " + "<span class='text-green'>" + country + "</span>"
             totalBlock.innerHTML = "Общая численность населения: " + "<span class='text-green'>" + abbreviateNumber(total) + " млн. человек</span>"
-            numberBlock.innerHTML = "Число зарегистрированных случаев: " + "<span class='text-green'>" + getFirstThreeDigits(number) + textMil + "</span>"
+            numberBlock.innerHTML = "Количество пациентов с ревматоидным артритом, согласно распространенности: "
+                + "<span class='text-green'>" + getFirstThreeDigits(number) + textMil + "</span>"
         })
     })
 })
